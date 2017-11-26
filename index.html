@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map Drawer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li id="line">
+				<button type="button" class="button block action" rel="line">Draw Route</button>
+				<div class="setting">
+					<form class="form" action="POST">
+						<div class="form-row">
+							<label>Line Color</label>
+							<input type="text" id="line-color">
+						</div>
+						<div class="form-row">
+							<label>Title</label>
+							<input type="text" class="form-item">
+						</div>
+						<div class="form-row button-wrapper">
+							<button type="button" class="button block small">Save</button>
+						</div>
+					</form>
+				</div>
+			</li>
+			<li id="area">
+				<button type="button" class="button block action">Draw Area</button>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div id="map" class="map-wrapper"></div>
+	</main>
+	<footer>
+		Copyrights &copy; 2017 - Map Drawer. Created by <a href="https://nwblb.id" target="_blank">Newbielabs Studio</a>
+	</footer>
+
+	<script type="text/javascript" src="assets/js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALu8l3XIaYUVWszfDGcIjLjf2g200-2U8"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/js/spectrum/spectrum.css">
+	<script type="text/javascript" src="assets/js/spectrum/spectrum.js"></script>
+
+	<script type="text/javascript">
+
+		var app = new thisApp();
+
+		$(function() {
+			app.initMap();
+
+			$('#line-color').spectrum({
+				preferredFormat: 'hex',
+			    color: '#f00',
+			    cancelText: 'Close',
+			    chooseText: 'Apply',
+			});
+
+			$('#line-color').bind('change', function() {
+				app.changeLineColor(this.value);
+			});
+
+			$('nav li>.action').bind('click', function() {
+				$('nav li>.action').removeClass('active');
+				$('nav li .setting').hide();
+				$(this).addClass('active');
+				$('#' + $(this).attr('rel')).find('.setting').show();
+			});
+		});
+
+		function thisApp()
+		{
+			this.map;
+			this.poly;
+
+			this.initMap = function()
+			{
+		        app.map = new google.maps.Map(document.getElementById('map'), {
+		          	zoom: 12,
+		          	center: {lat: -6.914744, lng: 107.609810},
+      				streetViewControl: false,
+		        });
+
+		        app.poly = new google.maps.Polyline({
+					strokeColor: '#FF0000',
+					strokeOpacity: 1.0,
+					strokeWeight: 3,
+					editable: true,
+				});
+
+				app.poly.setMap(app.map);
+
+		        app.map.addListener('click', app.drawLine);
+
+				google.maps.event.addListener(app.poly, 'rightclick', function(e) {
+
+					if (e.vertex == undefined) {
+						return;
+					}
+
+					app.removeLine(e.vertex);
+				});
+		    }
+
+		    this.drawLine = function(event)
+		    {
+				var path = app.poly.getPath();
+
+		        path.push(event.latLng);
+
+		        console.log(path.getArray());
+		    }
+
+		    this.removeLine = function(vertex)
+		    {
+		    	if ( ! app.poly || vertex == undefined) {
+					return;
+				}
+
+				app.poly.getPath().removeAt(vertex);
+		    }
+
+		    this.changeLineColor = function(color)
+		    {
+		    	console.log(color);
+		    	if ( ! app.poly || color == undefined) {
+					return;
+				}
+
+		    	app.poly.setOptions({strokeColor: color});
+		    }
+		}
+	</script>
+</body>
+</html>
