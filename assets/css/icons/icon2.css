@@ -1,0 +1,178 @@
+/** 
+ * Linecons
+ * @author Sergey Shmidt
+ * @license CC BY-SA 3.0
+ *
+ */
+ 
+@font-face {
+  font-family: 'icon2';
+  src:  url('fonts/icon2.eot?uzqrh6');
+  src:  url('fonts/icon2.eot?uzqrh6#iefix') format('embedded-opentype'),
+    url('fonts/icon2.ttf?uzqrh6') format('truetype'),
+    url('fonts/icon2.woff?uzqrh6') format('woff'),
+    url('fonts/icon2.svg?uzqrh6#icon2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon2-"], [class*=" icon2-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon2-heart:before {
+  content: "\e900";
+}
+.icon2-cloud:before {
+  content: "\e901";
+}
+.icon2-star:before {
+  content: "\e902";
+}
+.icon2-tv:before {
+  content: "\e903";
+}
+.icon2-sound:before {
+  content: "\e904";
+}
+.icon2-video:before {
+  content: "\e905";
+}
+.icon2-trash:before {
+  content: "\e906";
+}
+.icon2-user:before {
+  content: "\e907";
+}
+.icon2-key:before {
+  content: "\e908";
+}
+.icon2-search:before {
+  content: "\e909";
+}
+.icon2-settings:before {
+  content: "\e90a";
+}
+.icon2-camera:before {
+  content: "\e90b";
+}
+.icon2-tag:before {
+  content: "\e90c";
+}
+.icon2-lock:before {
+  content: "\e90d";
+}
+.icon2-bulb:before {
+  content: "\e90e";
+}
+.icon2-pen:before {
+  content: "\e90f";
+}
+.icon2-diamond:before {
+  content: "\e910";
+}
+.icon2-display:before {
+  content: "\e911";
+}
+.icon2-location:before {
+  content: "\e912";
+}
+.icon2-eye:before {
+  content: "\e913";
+}
+.icon2-bubble:before {
+  content: "\e914";
+}
+.icon2-stack:before {
+  content: "\e915";
+}
+.icon2-cup:before {
+  content: "\e916";
+}
+.icon2-phone:before {
+  content: "\e917";
+}
+.icon2-news:before {
+  content: "\e918";
+}
+.icon2-mail:before {
+  content: "\e919";
+}
+.icon2-like:before {
+  content: "\e91a";
+}
+.icon2-photo:before {
+  content: "\e91b";
+}
+.icon2-note:before {
+  content: "\e91c";
+}
+.icon2-clock:before {
+  content: "\e91d";
+}
+.icon2-paperplane:before {
+  content: "\e91e";
+}
+.icon2-params:before {
+  content: "\e91f";
+}
+.icon2-banknote:before {
+  content: "\e920";
+}
+.icon2-data:before {
+  content: "\e921";
+}
+.icon2-music:before {
+  content: "\e922";
+}
+.icon2-megaphone:before {
+  content: "\e923";
+}
+.icon2-study:before {
+  content: "\e924";
+}
+.icon2-lab:before {
+  content: "\e925";
+}
+.icon2-food:before {
+  content: "\e926";
+}
+.icon2-t-shirt:before {
+  content: "\e927";
+}
+.icon2-fire:before {
+  content: "\e928";
+}
+.icon2-clip:before {
+  content: "\e929";
+}
+.icon2-shop:before {
+  content: "\e92a";
+}
+.icon2-calendar:before {
+  content: "\e92b";
+}
+.icon2-wallet:before {
+  content: "\e92c";
+}
+.icon2-vynil:before {
+  content: "\e92d";
+}
+.icon2-truck:before {
+  content: "\e92e";
+}
+.icon2-world:before {
+  content: "\e92f";
+}
+

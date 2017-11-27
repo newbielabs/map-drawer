@@ -1,0 +1,214 @@
+/** 
+ * Vicons
+ * @author Victor Erixon
+ * @license Custom
+ *
+ */
+ 
+@font-face {
+  font-family: 'icon3';
+  src:  url('fonts/icon3.eot?hroafa');
+  src:  url('fonts/icon3.eot?hroafa#iefix') format('embedded-opentype'),
+    url('fonts/icon3.ttf?hroafa') format('truetype'),
+    url('fonts/icon3.woff?hroafa') format('woff'),
+    url('fonts/icon3.svg?hroafa#icon3') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon3-"], [class*=" icon3-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon3' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon3-box:before {
+  content: "\e900";
+}
+.icon3-write:before {
+  content: "\e901";
+}
+.icon3-clock:before {
+  content: "\e902";
+}
+.icon3-reply:before {
+  content: "\e903";
+}
+.icon3-reply-all:before {
+  content: "\e904";
+}
+.icon3-forward:before {
+  content: "\e905";
+}
+.icon3-flag:before {
+  content: "\e906";
+}
+.icon3-search:before {
+  content: "\e907";
+}
+.icon3-trash:before {
+  content: "\e908";
+}
+.icon3-envelope:before {
+  content: "\e909";
+}
+.icon3-bubble:before {
+  content: "\e90a";
+}
+.icon3-bubbles:before {
+  content: "\e90b";
+}
+.icon3-user:before {
+  content: "\e90c";
+}
+.icon3-users:before {
+  content: "\e90d";
+}
+.icon3-cloud:before {
+  content: "\e90e";
+}
+.icon3-download:before {
+  content: "\e90f";
+}
+.icon3-upload:before {
+  content: "\e910";
+}
+.icon3-rain:before {
+  content: "\e911";
+}
+.icon3-sun:before {
+  content: "\e912";
+}
+.icon3-moon:before {
+  content: "\e913";
+}
+.icon3-bell:before {
+  content: "\e914";
+}
+.icon3-folder:before {
+  content: "\e915";
+}
+.icon3-pin:before {
+  content: "\e916";
+}
+.icon3-sound:before {
+  content: "\e917";
+}
+.icon3-microphone:before {
+  content: "\e918";
+}
+.icon3-camera:before {
+  content: "\e919";
+}
+.icon3-image:before {
+  content: "\e91a";
+}
+.icon3-cog:before {
+  content: "\e91b";
+}
+.icon3-calendar:before {
+  content: "\e91c";
+}
+.icon3-book:before {
+  content: "\e91d";
+}
+.icon3-map-marker:before {
+  content: "\e91e";
+}
+.icon3-store:before {
+  content: "\e91f";
+}
+.icon3-support:before {
+  content: "\e920";
+}
+.icon3-tag:before {
+  content: "\e921";
+}
+.icon3-heart:before {
+  content: "\e922";
+}
+.icon3-video-camera:before {
+  content: "\e923";
+}
+.icon3-trophy:before {
+  content: "\e924";
+}
+.icon3-cart:before {
+  content: "\e925";
+}
+.icon3-eye:before {
+  content: "\e926";
+}
+.icon3-cancel:before {
+  content: "\e927";
+}
+.icon3-chart:before {
+  content: "\e928";
+}
+.icon3-target:before {
+  content: "\e929";
+}
+.icon3-printer:before {
+  content: "\e92a";
+}
+.icon3-location:before {
+  content: "\e92b";
+}
+.icon3-bookmark:before {
+  content: "\e92c";
+}
+.icon3-monitor:before {
+  content: "\e92d";
+}
+.icon3-cross:before {
+  content: "\e92e";
+}
+.icon3-plus:before {
+  content: "\e92f";
+}
+.icon3-left:before {
+  content: "\e930";
+}
+.icon3-up:before {
+  content: "\e931";
+}
+.icon3-browser:before {
+  content: "\e932";
+}
+.icon3-windows:before {
+  content: "\e933";
+}
+.icon3-switch:before {
+  content: "\e934";
+}
+.icon3-dashboard:before {
+  content: "\e935";
+}
+.icon3-play:before {
+  content: "\e936";
+}
+.icon3-fast-forward:before {
+  content: "\e937";
+}
+.icon3-next:before {
+  content: "\e938";
+}
+.icon3-refresh:before {
+  content: "\e939";
+}
+.icon3-film:before {
+  content: "\e93a";
+}
+.icon3-home:before {
+  content: "\e93b";
+}
+
